@@ -1,0 +1,12 @@
+footer{
+    background-color: #f3f4f6;
+    border-top: var(--border-ultra-thin);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 1em;
+    height: 36px;
+    width: 100%;
+}

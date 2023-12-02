@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --border-thin: 1px solid black;
+    --border-ultra-thin: 1px solid rgba(0,0,0, 0.2);
+    --text-color: #000000;
+}
+
+body{
+    --text-color: #000000;
+    font-size: 16px;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-wrapper{
+    border-left: var(--border-ultra-thin);
+    width: 450px;
+    min-width: 360px;
+    max-width: 450px;
+}
+
+.icon-circle-wrapper{
+    border-radius: 50%;
+}

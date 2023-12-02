@@ -1,0 +1,8 @@
+nav{
+    border-bottom: var(--border-ultra-thin);
+}
+
+.brand-logo{
+    height: 2em;
+    width: 2em;
+}
