@@ -7,6 +7,7 @@ export default function Patients(){
             <h2 className='text-slate-600 text-xl font-semibold'>Raýatlar</h2>
             <div className='border rounded-md p-4 h-fit'>
                 <TableHeader/>
+                {/* <UsersTable/> */}
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 import TableHeader from 'components/Containers/TableHeader'
-import UsersTable from 'components/Containers/UsersTable'
 
 export default function Patients(){
     return(
