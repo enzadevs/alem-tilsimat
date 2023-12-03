@@ -6,4 +6,7 @@ npm install
 ./pocketbase serve
 npm run dev
 ```
-and link to /localtest page
+...then link to /localtest page and uncomment following line:
+```
+{/* <UsersTable/> */}
+```
