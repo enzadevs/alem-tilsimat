@@ -1,4 +1,9 @@
-export default function UsersTable(){
+import PocketBase from 'pocketbase'
+
+export default async function UsersTable(){
+    const pb = new PocketBase('http://127.0.0.1:8090')
+    const results = await pb.collection('patients').getFullList({sort: '-created'})
+
     return(
         <div className='rounded mt-4'>
             <table className='table-fixed w-full'>
@@ -14,7 +19,19 @@ export default function UsersTable(){
                 </tr>
             </thead>
             <tbody>
-                
+                {results?.map(item=>{
+                    return(
+                        <tr key={item.id} className='border-b'>
+                            <td className='centre'>#</td>
+                            <td className='text-sm text-blue-500'>{item.firstName + ' ' + item.lastName + ' ' + item.secondName}</td>
+                            <td className='text-sm font-semibold'>{item.birthDate}</td>
+                            <td className='text-sm text-blue-500 font-semibold'>{item.doctype}</td>
+                            <td className='text-sm text-yellow-800 rounded-md'>{item.docID + '' + item.docNumber}</td>
+                            <td className='text-sm text-red-500'>{item.gender}</td>
+                            <td className='text-sm'>{item.created}</td>
+                        </tr>
+                    )
+                })}
             </tbody>
             </table>
         </div>

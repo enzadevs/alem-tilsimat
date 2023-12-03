@@ -67,7 +67,7 @@ export default function NavBar(){
             <ul className='flex flex-row'>
                 {navLinks.map(item =>{
                     return(
-                        <Link key={item.id} href={item.link} className='text-xs mx-1 bg-blue-200 text-blue-800 centre px-2 rounded-md transition-all ease-in-out delay-100 hover:text-base hover:font-medium'>
+                        <Link key={item.id} href='/patients' className='text-xs mx-1 bg-blue-200 text-blue-800 centre px-2 rounded-md transition-all ease-in-out delay-100 hover:text-base hover:font-medium'>
                             {item.text}
                         </Link>
                     )

@@ -3,7 +3,7 @@ import {BsFillJournalBookmarkFill,BsChatSquareDots,BsArrowRepeat} from 'react-ic
 
 export default function Aside(){
     return(
-        <div className='aside-wrapper p-4 flex flex-col gap-6'>
+        <div className='aside-wrapper p-4 flex flex-col gap-6 w-72'>
             <div className='doc-container border h-fit w-100 rounded-md border-slate-300 shadow-xl flex flex-col gap-2 p-4'>
                 <Link href='/' className='border-b border-slate-400 h-fit w-full py-2 flex flex-row justify-between'>
                     <p>Resminamalar</p>
