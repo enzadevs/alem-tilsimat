@@ -5,4 +5,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   plugins: [],
+  theme: {
+    extend: {
+      width: {
+        '1024': '1024px',
+      }
+    }
+  }
 }
