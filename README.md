@@ -6,3 +6,4 @@ npm install
 ./pocketbase serve
 npm run dev
 ```
+and link to /localtest page
